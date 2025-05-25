@@ -2,6 +2,8 @@
 
 **Process Hider** is a project that demonstrates manual process injection and stealth techniques by hooking native Windows APIs—**without relying on the C Runtime (CRT)**. It targets the Windows Task Manager (`Taskmgr.exe`) and hides specific processes from its view by intercepting low-level system calls.
 
+![demo](https://i.imgur.com/zoqjp7p.gif)
+
 ### Features
 
 - **Manual Mapping (Injection)**: Injects itself into `Taskmgr.exe` without using `LoadLibrary`. Instead, it manually maps its own PE image into the remote process's memory.
